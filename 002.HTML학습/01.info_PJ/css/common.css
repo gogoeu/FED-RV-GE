@@ -1,10 +1,10 @@
 @charset "utf-8";
+/* CSS 외부파일은 반드시 맨위에 utf-8설정 필수! */
 /* Info PJ 공통 CSS - common.css */
 
 /* CSS 인터널 코딩구역 */
 /* 웹폰트 import */
 @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Single+Day&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Single+Day&family=Yeon+Sung&display=swap");
 /* 
         선택자{
           속성:값;
@@ -23,25 +23,24 @@
   /* 배경색 bgc */
   background-color: #dbf8e2;
 }
-/* 전체 타이틀 
-      CSS에서 띄어쓰기는 하위요소를 선택함!
-      */
+/* 전체 타이틀
+      CSS에서 띄어쓰기는 하위요소를 선택함! */
 #top-area h1 {
   /* 글자체 ff
-        콤마로 연결된 글자체는 앞의체가 없을경우 대체체임! 모두 없을시 브라우저 기본체 나옴*/
+        콤마로 연결된 글자체는 앞의체가 없을경우
+        대체체임! 모두없을시 브라우저 기본체나옴 */
   font-family: "Do Hyeon", sans-serif;
   /* 글자크기 fz */
-  font-size: 40px;
+  font-size: 48px;
   /* 글자색 c */
-  color: #36885f;
-  /* 글자 그림자 ts 
-        text-shadow: x축 y축 블러 색;
-        */
-  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.95);
+  color: #01623a;
+  /* 글자그림자 ts
+        text-shadow: x축 y축 블러 색; */
+  text-shadow: 3px 3px 2px #0000006f;
 }
 
 /* 메뉴 a요소
-      기본 셋팅된 글자색, 밑줄 변경 */
+      기본셋팅된 글자색, 밑줄 변경 */
 .menu a {
   /* 글자체 */
   font-family: "Single Day", cursive;
@@ -49,16 +48,17 @@
   color: darkcyan;
   /* 글자밑줄없앰 tdn */
   text-decoration: none;
-  /* 글자크기 */
-  font-size: 22px;
+  /* 글자크기 fz */
+  font-size: 28px;
   /* 글자두껍게 fwb */
   font-weight: bold;
 }
-/* 첫번째 a메뉴를 빼고 두번째부터 끝까지 양쪽마진 적용하기 
-      주의) 인라인요소는 위아래 마진 적용 안됨!*/
+/* 첫번째 a메뉴를 빼고 두번째부터
+      끝까지 양쪽마진 적용하기
+      주의) 인라인요소는 위아래 마진적용안됨! */
 .menu span + a {
-  /* 앞에 span 형제요소가 있는 a만 선택 
-        +는 형제선택자*/
+  /* 앞에 span형제요소가 있는 a만선택
+        +는 형제선택자 */
   margin: 4px;
 }
 
@@ -136,9 +136,9 @@
 /* 주소셋팅 */
 address {
   /* 글자체 */
-  font-family: "Yeon Sung", system-ui;
+  font-family: "Do Hyeon", sans-serif;
   /* 글자크기 fz */
-  font-size: 40px;
+  font-size: 24px;
   /* 기본 이탤릭체 해제하기 fsn */
   font-style: normal;
   /* 글자 중앙정렬 tac */
