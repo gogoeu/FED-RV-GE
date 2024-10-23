@@ -379,7 +379,8 @@
             <h3>주요뉴스</h3>
             <ul>
               <li>
-                <a href="https://n.news.naver.com/mnews/article/081/0003489077" target="_blank">“비자 면제해줬더니 불법체류”…제주서 중국인 1만명이나</a>
+                <a href="https://n.news.naver.com/mnews/article/081/0003489077" target="_blank">
+                  “비자 면제해줬더니 불법체류”…제주서 중국인 1만명이나</a>
               </li>
               <li>
                 <a href="https://n.news.naver.com/mnews/article/081/0003489044" target="_blank">“5조원대 무기 자체구매할 듯” K방산 큰손, 갑자기 방향 튼 이유는</a>
@@ -434,7 +435,7 @@
                 <a href="https://n.news.naver.com/mnews/article/014/0005256340" target="_blank">두산 사업재편 재시동… "주식 더 준다"</a>
                </dd>
                <dd>
-                <a href="https://n.news.naver.com/mnews/article/629/0000330962" target="_blank">https://n.news.naver.com/mnews/article/629/0000330962</a>
+                <a href="https://n.news.naver.com/mnews/article/629/0000330962" target="_blank">맘스터치, 메뉴 62종 가격 인상…싸이버거 300원↑</a>
                </dd>
               <!-- 사회파트 -->
                <dt>사회</dt>
@@ -454,6 +455,68 @@
                </dd>
             </dl>
           </article>
+
+          <!-- 
+            [ 테이블 요소 : table ]
+            table > tbody > tr > td
+
+            -> tbody는 안쓰고 tr부터 구현해도
+            브라우저가 자동으로 그려준다!
+
+            주의) table > tr 로 직계선택하게 되면
+            위와 같은 구조적인 이유로 선택되지 않는다!
+
+            _______________________________
+
+            ((간단한 테이블 작성시 필수요소 3가지!))
+            table : 테이블 박스 부모요소
+            tr : 테이블 행요소(table row)
+            td : 테이블 데이터요소(table data)
+           -->
+
+           <!-- 사진뉴스 : table -->
+          <article class="photo-news news-box">
+            <h3>사진뉴스</h3>
+            <!-- 3행3열 테이블 구성하기 -->
+             <table border="1">
+              <!-- 첫번째줄 -->
+              <tr>
+                <td>1</td>
+                <td>
+                  <a href="https://n.news.naver.com/mnews/ranking/article/092/0002349600?ntype=RANKING" target="_blank">"아이폰17, 애플 제품 중 최고 야심작"…근거는?</a>
+                </td>
+                <td>
+                  <a href="https://n.news.naver.com/mnews/ranking/article/092/0002349600?ntype=RANKING" target="_blank">
+                    <img src="./images/photo_news1.jpg" alt="포토뉴스1">
+                  </a>
+                </td>
+              </tr>
+              <!-- 두번째줄 -->
+              <tr>
+                <td>2</td>
+                <td>
+                  <a href="https://n.news.naver.com/mnews/ranking/article/030/0003250270?ntype=RANKING" target="_blank">“북한군, 러시아서 6천명씩 2개 여단 훈련… 돈 때문에 파병나간 듯”</a>
+                </td>
+                <td>
+                  <a href="https://n.news.naver.com/mnews/ranking/article/030/0003250270?ntype=RANKING" target="_blank"><img src="./images/photo_news2.jpg" alt="포토뉴스2"></a>
+                  
+                </td>
+              </tr>
+              <!-- 세번째줄 -->
+              <tr>
+                <td>3</td>
+                <td>
+                  <a href="https://n.news.naver.com/mnews/ranking/article/018/0005866034?ntype=RANKING" target="_blank">안성재 셰프 '1인 70만 원' 디너 코스…오픈 61초 만에 매진</a>
+                </td>
+                <td>
+                  <a href="https://n.news.naver.com/mnews/ranking/article/018/0005866034?ntype=RANKING" target="_blank"><img src="./images/photo_news3.jpg" alt="포토뉴스3"></a>
+                  
+                </td>
+              </tr>
+             </table>
+          </article>
+
+          
 
 
 
