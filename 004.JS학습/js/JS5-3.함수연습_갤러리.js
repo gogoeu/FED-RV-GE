@@ -71,7 +71,6 @@ imgTxt.style.color = tColor[0];
 btn.forEach((el) => {
   // el - 각각의 버튼요소
   myFn.addEvt(el, "click", changeImg);
-  el.addEventListener('click',function)
 }); ////// forEach /////
 
 // 3. 함수만들기 ////////////
