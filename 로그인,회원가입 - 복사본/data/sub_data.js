@@ -51,28 +51,28 @@ export default {
             <ul>
                 <!-- 1.아이디 -->
                 <li>
-                    <label class="itit" for="mid">아이디</label>
+                    <label class="itit" for="mid"></label>
                     <input type="text" name="mid" id="mid" maxlength="20" placeholder="아이디를 입력해주세요!">
                     <!-- 메시지박스 -->
                     <span class="msg"></span>
                 </li>
                 <!-- 2.비밀번호 -->
                 <li>
-                    <label class="itit" for="mpw">비밀번호</label>
-                    <input type="password" name="mpw" id="mpw" maxlength="20" placeholder="비밀번호를 입력해주세요!">
+                    <label class="itit" for="mpw"></label>
+                    <input type="password" name="mpw" id="mpw" maxlength="20" placeholder="비밀번호">
                     <!-- 메시지박스 -->
                     <span class="msg"></span>
                 </li>
                 <!-- 3.비밀번호확인 -->
                 <li>
-                    <label class="itit" for="mpw2">비밀번호확인</label>
-                    <input type="password" name="mpw2" id="mpw2" maxlength="20" placeholder="비밀번호확인을 입력해주세요!">
+                    <label class="itit" for="mpw2"></label>
+                    <input type="password" name="mpw2" id="mpw2" maxlength="20" placeholder="비밀번호확인">
                     <!-- 메시지박스 -->
                     <span class="msg"></span>
                 </li>
                 <!-- 4.이름 -->
                 <li>
-                    <label class="itit" for="mnm">이름</label>
+                    <label class="itit" for="mnm"></label>
                     <input type="text" name="mnm" id="mnm" maxlength="20" placeholder="이름을 입력해주세요!">
                     <!-- 메시지박스 -->
                     <span class="msg"></span>
