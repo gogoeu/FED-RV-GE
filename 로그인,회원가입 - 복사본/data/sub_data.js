@@ -93,7 +93,7 @@ export default {
                 </li>
                 <!-- 6.이메일 -->
                 <li>
-                    <label class="itit" for="email1">이메일</label>
+                    <label class="itit" for="email1"></label>
                     <input type="text" name="email1" id="email1" placeholder="이메일앞주소">
                     <span class="gol">@</span>
                     <select name="seleml" id="seleml">
@@ -124,7 +124,7 @@ export default {
                 </li>
                 <!-- 7.이메일 뒷주소 직접입력창 -->
                 <li>
-                    <label for="email2" class="ee">이메일 뒷주소 직접입력</label>
+                    <label for="email2" class="ee"></label>
                     <input type="text" name="email2" id="email2" placeholder="이메일뒷주소">
                 </li>
                 <!-- 8.서브밋 버튼 -->

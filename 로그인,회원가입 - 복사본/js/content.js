@@ -1,8 +1,5 @@
-comFn// 서브 페이지 JS - content.js
-
-// 메뉴를 넣기위한 공통함수 불러오기
-import comFn from "./common.js";
-comFn();//실행!
+import linksysFn from "./linksys.js";
+linksysFn();
 
 // 서브 소스 데이터 가져오기
 import subSource from "../data/sub_data.js";
