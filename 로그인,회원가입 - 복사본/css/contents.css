@@ -1,0 +1,45 @@
+li {
+    list-style: none;
+}
+.scont {
+    text-align: center;
+}
+.scont input[type=text],
+.scont input[type=password]{
+    width: 345px;
+    height: 40px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    padding: 0.5% 10px;
+    color: #1d1d1d;
+}
+.scont input[type=text] {
+    margin-bottom: 30px;
+}
+.scont input[type=password] {
+    margin-bottom: 2%;
+}
+.scont input[type=submit] {
+    background-color: black;
+    width: 345px;
+    height: 40px;
+    
+    border-radius: 5px;
+    padding-left: 5px;
+    color:#fff;
+}
+#sbtn {
+    background-color: black;
+    margin: 20px 0 14px 0;
+}
+.scbar {
+    text-align: center;
+    font-size: 11px;
+    margin-top: 10%;
+}
+.scbar a {
+    color: #000;
+    text-decoration: none;
+}

@@ -2,7 +2,11 @@ import linksysFn from "./login_linksys.js";
 linksysFn();
 
 // 서브 소스 데이터 가져오기
+<<<<<<< HEAD
 import subSource from "../data/login__sub_data.js";
+=======
+import subSource from "../data/sub_data.js";
+>>>>>>> 5b6fff810e5185bd7df21056cd03948100852032
 // console.log(subSource);
 
 // 1. 파라미터 확인하기!
