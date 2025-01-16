@@ -43,3 +43,37 @@ li {
     color: #000;
     text-decoration: none;
 }
+.scont ul li:nth-of-type(5) {
+    margin-bottom: 2%;
+}
+
+
+@media screen and (max-width: 1024px) {
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    .box {
+        width: 100%;
+        
+    }
+    .scont input[type=text],
+    .scont input[type=password]{
+        width: 100%;
+    }
+    .scont input[type=text] {
+        margin-bottom: 2%;
+    }
+    #sbtn {
+        width: 100%;
+    }
+    .addbx {
+        margin-top: 0;
+    }
+    .scont input[type=submit] {
+        width: 100%;
+    }
+    .scont ul li:nth-of-type(5) {
+        margin-bottom: 2%;
+    }
+}
