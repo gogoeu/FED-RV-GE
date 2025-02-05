@@ -14,9 +14,35 @@ body {
 /* 공사중 표시 */
 /************* 2. 공통 class *************/
 /* 2-1. 중앙 속박스 */
-.ibx {
+.inbox {
   max-width: 1600px;
   margin: 0 auto;
+}
+
+.sub-tit {
+  font-size: 4.2rem;
+  padding-bottom: 15px;
+}
+
+.common-box, .fashion-area, .today-area {
+  padding: 4rem;
+}
+
+.big-box-type figure, .post-list ul li:nth-child(3) figure, .post-list-today ul li:nth-child(1) figure {
+  aspect-ratio: 1/2;
+}
+.big-box-type figure figcaption, .post-list ul li:nth-child(3) figure figcaption, .post-list-today ul li:nth-child(1) figure figcaption {
+  translate: 0 -100%;
+  padding: 5rem;
+  color: #fff;
+  background: linear-gradient(to top, #000, transparent);
+}
+.big-box-type figure figcaption h3.s-tit, .post-list ul li:nth-child(3) figure figcaption h3.s-tit, .post-list-today ul li:nth-child(1) figure figcaption h3.s-tit {
+  font-size: 3.6rem;
+  font-weight: normal;
+}
+.big-box-type figure figcaption p.date, .post-list ul li:nth-child(3) figure figcaption p.date, .post-list-today ul li:nth-child(1) figure figcaption p.date {
+  display: none;
 }
 
 /* 보그 PJ 리셋 CSS - _reset.scss */
@@ -66,6 +92,10 @@ img {
   값으로 top, middle등 도 효과있음! */
 }
 
+#top-area {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2235294118);
+}
+
 .top-area {
   /* 부모자격 */
   position: relative;
@@ -110,7 +140,7 @@ img {
 .sum-menu ol {
   display: flex;
   align-items: center;
-  gap: 3em;
+  gap: 2rem;
 }
 .sum-menu ol li:nth-child(1) a {
   font-weight: bold;
@@ -131,12 +161,117 @@ img {
   display: inline-block;
 }
 
+.add-menu {
+  position: absolute;
+  right: 5rem;
+  top: 2rem;
+  font-size: 1.6rem;
+}
+.add-menu ol {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.add-menu ol li a {
+  letter-spacing: 2px;
+}
+.add-menu ol li.hide {
+  display: none;
+}
+
+#footer-area {
+  background-color: #000;
+}
+
+.footer-area {
+  /* 최소높이 */
+  min-height: 298px;
+  padding: 80px 0 78px;
+  box-sizing: border-box;
+}
+.footer-area .blogo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footer-area .blogo img {
+  height: 56px;
+}
+.footer-area .addr {
+  color: #747474;
+  text-align: center;
+  font-size: 11px;
+  /* address 요소 기본 이탤릭해제 */
+  font-style: normal;
+  margin: 20px 0 10px;
+}
+.footer-area .blink {
+  /* 플렉스박스 */
+  display: flex;
+  /* 진행방향정렬 : 중앙 */
+  justify-content: center;
+  /* 플렉스 랩핑박스 */
+  flex-wrap: wrap;
+  /* 사이간격 gap: 위아래 양쪽 */
+  gap: 0 12px;
+}
+.footer-area .blink a {
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+}
+.footer-area .blink li:last-child a {
+  font-weight: bold;
+}
+
+/* 위로가기 버튼 */
+.tbtn {
+  position: fixed;
+  bottom: -35px; /* 아랫쪽에 나가있음 */
+  right: 75px;
+  width: 48px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  background-color: #333;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+  z-index: 9999;
+  font-size: 12px;
+  opacity: 0; /* 처음에 투명 */
+  /* 트랜지션 - bottom엔 적용되면 안되므로 별도지정함 */
+  transition: background-color 0.3s, opacity 0.3s;
+}
+.tbtn.on {
+  opacity: 1;
+  bottom: 0;
+}
+.tbtn:hover {
+  background-color: red;
+}
+
+#ban-area {
+  overflow: hidden;
+}
+
+.ban-box {
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  /*이동버튼*/
+  /*블릿버튼*/
+}
 .ban-box ul {
+  position: relative;
+  /* 3번째 슬라이드부터 보이기(앞에2개) */
+  left: -200%;
   display: flex;
 }
 .ban-box ul li {
   position: relative;
-  width: 100vw;
+  width: 100%;
+  /* 강제축소 설정 끄기 */
+  flex-shrink: 0;
   aspect-ratio: 1499/701;
 }
 .ban-box ul li img {
@@ -145,6 +280,7 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-user-drag: none;
 }
 .ban-box ul li .post-content {
   position: absolute;
@@ -161,19 +297,82 @@ img {
 .ban-box ul li .post-content h3 {
   font-size: 4.2rem;
 }
+.ban-box .abtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /*Y축 중앙이동*/
+  /*왼쪽버튼*/
+  /*오른쪽버튼*/
+}
+.ban-box .abtn.ab1 {
+  left: 50px;
+}
+.ban-box .abtn.ab2 {
+  right: 50px;
+}
+.ban-box .indic {
+  display: flex;
+  /* 플렉스박스 */
+  position: absolute;
+  bottom: 50px;
+  left: 80px;
+}
+.ban-box .indic li {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  /*회색블릿이미지가 보이게하는 class*/
+}
+.ban-box .indic li img {
+  position: absolute;
+  /*이미지 겹치게*/
+}
+.ban-box .indic li img:last-child {
+  /*회색이미지만 투명하게*/
+  opacity: 0;
+}
+.ban-box .indic li.on img:last-child {
+  /*회색이미지만 투명하게*/
+  opacity: 1;
+  /*우선적용!*/
+}
 
 @media (max-width: 1000px) {
   .ban-box ul li {
     aspect-ratio: 979/931;
   }
 }
-.sub-tit {
-  font-size: 4.2rem;
-  padding-bottom: 15px;
+.post-list-today ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
-
-.common-box, .fashion-area {
-  padding: 4rem;
+.post-list-today ul li:nth-child(1) {
+  grid-area: 1/1/3/2;
+}
+.post-list-today ul img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.post-list-today ul figure {
+  aspect-ratio: 1.3;
+}
+.post-list-today ul figcaption {
+  padding: 20px 0;
+}
+.post-list-today ul figcaption p.category {
+  font-size: 1.7rem;
+}
+.post-list-today ul figcaption h3.s-tit {
+  font-size: 2.2rem;
+  margin: 10px 0;
+}
+.post-list-today ul figcaption p.date {
+  font-size: 1.7rem;
+  color: #999;
 }
 
 .post-list ul {
@@ -184,20 +383,14 @@ img {
 .post-list ul li:nth-child(3) {
   grid-area: 1/3/3/4;
 }
-.post-list ul li:nth-child(3) figcaption {
-  translate: 0 -100%;
-  padding: 20px;
-  color: #fff;
-  background: linear-gradient(to top, #000, transparent);
-}
-.post-list ul li:nth-child(3) figcaption p.date {
-  display: none;
-}
 .post-list ul img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.post-list ul figure {
+  aspect-ratio: 1.3;
 }
 .post-list ul figcaption {
   padding: 20px 0;
